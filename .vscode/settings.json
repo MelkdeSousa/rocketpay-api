@@ -1,0 +1,27 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MariaDB",
+      "name": "tests",
+      "username": "root",
+      "password": "_",
+      "database": "mysql"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "rocketpay",
+      "database": "rocketpay_dev",
+      "username": "postgres",
+      "password": "postgres"
+    }
+  ]
+}
