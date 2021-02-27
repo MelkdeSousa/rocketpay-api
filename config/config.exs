@@ -1,9 +1,3 @@
-# This file is responsible for configuring your application
-# and its dependencies with the aid of the Mix.Config module.
-#
-# This configuration file is loaded before any dependency and
-# is restricted to this project.
-
 # General application configuration
 use Mix.Config
 
@@ -21,6 +15,11 @@ config :rocketpay, RocketpayWeb.Endpoint,
 config :rocketpay, Rocketpay.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
+
+# Authentication
+config :rocketpay, :basic_auth,
+  username: "admin",
+  password: "1234567"
 
 # Configures Elixir's Logger
 config :logger, :console,
